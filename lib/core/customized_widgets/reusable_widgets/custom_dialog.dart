@@ -64,7 +64,7 @@ class CustomDialog {
             actions: [
               CustomizedElevatedButton(
                 color: ColorManager.darkBlue,
-                text: "ok",
+                bottonWidget:Text ("ok"),
                 onPressed: () {
                   if (positiveOnClick != null) {
                     positiveOnClick!();
@@ -108,7 +108,7 @@ class CustomDialog {
                   Expanded(
                     child: CustomizedElevatedButton(
                       color: Colors.transparent,
-                      text: "no,",
+                      bottonWidget:Text ("no,"),
                       textStyle: getSemiBoldStyle(color:ColorManager.darkBlue ),
                       onPressed: () {
                         if (negativeOnClick != null) {
@@ -124,7 +124,7 @@ class CustomDialog {
                   ),
                   Expanded(
                     child: CustomizedElevatedButton(
-                      text:"yes",
+                      bottonWidget:Text("yes"),
                       onPressed: () {
                         if (positiveOnClick != null) {
                           positiveOnClick!();

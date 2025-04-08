@@ -17,6 +17,7 @@ abstract class ColorManager {
   static const Color starRateColor = Color(0XFFFDD835);
   static const Color textColor = Color(0xff06004F);
   static Color darkBlue = const Color(0xff06004F);
+  static Color purple = const Color(0xd52a81c8);
   static Color yellow = const Color(0xFFFDD835);
 
   // new colors

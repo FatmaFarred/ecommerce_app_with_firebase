@@ -8,7 +8,7 @@ import '../../constants/font_manager/font_style_manager.dart';
 class CustomizedElevatedButton extends StatelessWidget {
   Color? borderColor;
   Color? color;
-  String text;
+  Widget bottonWidget;
   Widget? prefixIcon;
   Widget? suffixIcon;
   TextStyle? textStyle;
@@ -17,7 +17,7 @@ class CustomizedElevatedButton extends StatelessWidget {
       {super.key,
       this.borderColor,
       this.color,
-      required this.text,
+      required this.bottonWidget,
       this.textStyle,
       this.prefixIcon,
       this.suffixIcon,
@@ -26,11 +26,14 @@ class CustomizedElevatedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
         style: ElevatedButton.styleFrom(
+
+
             elevation: 0,
-            padding: EdgeInsets.all(16.w),
+            //padding: EdgeInsets.all(2.w),
             shape: RoundedRectangleBorder(
+
                 side: BorderSide(color: borderColor ?? ColorManager.darkBlue),
-                borderRadius: BorderRadius.circular(15.r)),
+                borderRadius: BorderRadius.circular(40.r)),
             backgroundColor: color ??  ColorManager.darkBlue),
         onPressed: () {
           if (onPressed != null) {
@@ -43,19 +46,13 @@ class CustomizedElevatedButton extends StatelessWidget {
             if (prefixIcon != null) ...[
               prefixIcon!,
               SizedBox(
-                width: 10.w,
+                width: 0.w,
               )
             ],
-            Text(
-              text,
-              style: textStyle ??
-                  getSemiBoldStyle(
-
-                      color: ColorManager.black),
-            ),
+            bottonWidget,
             if (suffixIcon != null) ...[
               SizedBox(
-                width: 10.w,
+                width: 0.w,
               ),
               suffixIcon!
             ]
