@@ -16,7 +16,7 @@ class MyAppTheme {
     brightness: Brightness.light,
     primaryColor: ColorManager.darkBlue,
     scaffoldBackgroundColor: ColorManager.white,
-    textTheme: MyTextTheme.darkTextTheme,
+    textTheme: MyTextTheme.lightTextTheme,
     appBarTheme:MyAppBarTheme.lightAppBarTheme,
       bottomSheetTheme:MyBottomSheetTheme.lightBottomSheet,
     checkboxTheme:MyCheckBoxTheme.lightCheckBox,

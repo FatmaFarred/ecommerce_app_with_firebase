@@ -26,7 +26,6 @@ environment:
 
 
 
-
 dependencies:
   flutter:
     sdk: flutter
@@ -36,6 +35,18 @@ dependencies:
   cupertino_icons: ^1.0.8
   iconsax: ^0.0.8
   get: ^4.7.2
+  get_storage: ^2.1.1
+  http:
+  logger:
+  url_launcher:
+  intl:
+  flutter_screenutil: ^5.9.3
+  shared_preferences:
+  flutter_native_splash:
+  smooth_page_indicator: ^1.2.1
+  lottie: ^3.3.1
+
+
 
 
 dev_dependencies:
@@ -63,6 +74,8 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/logos/
+    - assets/svg_images/
+    - assets/lottie/
 
 
   fonts:
