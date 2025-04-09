@@ -13,8 +13,10 @@ class CustomizedElevatedButton extends StatelessWidget {
   Widget? suffixIcon;
   TextStyle? textStyle;
   Function? onPressed;
+  double? borderRadius ;
   CustomizedElevatedButton(
       {super.key,
+         this.borderRadius,
       this.borderColor,
       this.color,
       required this.bottonWidget,
@@ -29,11 +31,11 @@ class CustomizedElevatedButton extends StatelessWidget {
 
 
             elevation: 0,
-            //padding: EdgeInsets.all(2.w),
+            padding: EdgeInsets.all(20.w),
             shape: RoundedRectangleBorder(
 
                 side: BorderSide(color: borderColor ?? ColorManager.darkBlue),
-                borderRadius: BorderRadius.circular(40.r)),
+                borderRadius: BorderRadius.circular(borderRadius??16)),
             backgroundColor: color ??  ColorManager.darkBlue),
         onPressed: () {
           if (onPressed != null) {

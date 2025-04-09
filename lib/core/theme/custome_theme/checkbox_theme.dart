@@ -18,7 +18,7 @@ class MyCheckBoxTheme {
 ),
     fillColor: MaterialStateProperty. resolveWith((states){
       if(states.contains(MaterialState.selected)){
-        return ColorManager.darkBlue;
+        return ColorManager.purple;
 
       }else {
         return ColorManager.transparent;
@@ -44,7 +44,7 @@ class MyCheckBoxTheme {
     ),
     fillColor: WidgetStateProperty. resolveWith((states){
       if(states.contains(WidgetState.selected)){
-        return ColorManager.darkBlue;
+        return ColorManager.purple;
 
       }else {
         return ColorManager.transparent;

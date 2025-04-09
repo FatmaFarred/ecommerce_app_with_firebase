@@ -21,7 +21,8 @@ class MyAppTheme {
       bottomSheetTheme:MyBottomSheetTheme.lightBottomSheet,
     checkboxTheme:MyCheckBoxTheme.lightCheckBox,
     chipTheme:MyChipTheme.lightChipTheme,
-    outlinedButtonTheme:MyOutLinedBottonTheme.lightOutlinedButtonTheme
+    outlinedButtonTheme:MyOutLinedBottonTheme.lightOutlinedButtonTheme,
+    indicatorColor: ColorManager.black
   );
 
 
@@ -37,7 +38,8 @@ class MyAppTheme {
       bottomSheetTheme:MyBottomSheetTheme.darkBottomSheet,
       checkboxTheme:MyCheckBoxTheme.darkCheckBox,
       chipTheme:MyChipTheme.darkChipTheme,
-      outlinedButtonTheme:MyOutLinedBottonTheme.darkOutlinedButtonTheme
+      outlinedButtonTheme:MyOutLinedBottonTheme.darkOutlinedButtonTheme,
+      indicatorColor: ColorManager.white
 
 
 

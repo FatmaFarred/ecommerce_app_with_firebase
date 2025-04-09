@@ -18,7 +18,7 @@ import 'onboarding_page_widget.dart';
 
 class OnBoarding extends StatelessWidget {
   const OnBoarding({super.key});
-
+  static String OnBoardingRouteName="OnBoarding";
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +57,7 @@ class OnBoarding extends StatelessWidget {
         Positioned(bottom: MyDeviceUtility.getBottmNavigationBarHeight(),
           right: 16.w,
           child: SizedBox(width: 72.w,height: 72.h,
-            child: CustomizedElevatedButton(bottonWidget:Icon (Icons.arrow_forward_ios_rounded,color:ColorManager.white ,size: 15, ),color:ColorManager.purple ,borderColor:ColorManager.purple ,onPressed:() {
+            child: CustomizedElevatedButton(bottonWidget:Icon (Icons.arrow_forward_ios_rounded,color:ColorManager.white ,size: 15, ),color:ColorManager.purple,borderRadius: 40 ,borderColor:ColorManager.purple ,onPressed:() {
               controller.nextPage();
             }
             ,)),

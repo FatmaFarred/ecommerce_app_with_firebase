@@ -6,18 +6,20 @@ import '../../core/constants/assets_manager.dart';
 
 class OnBoardingPageWidget extends StatelessWidget {
    OnBoardingPageWidget({
-    required this.text, required this.imagePath, required this.subText
+    required this.text, required this.imagePath, required this.subText,this.height
   });
   String imagePath;
   String text;
   String subText;
+  double ?height;
+
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding:  EdgeInsets.symmetric(horizontal:16.w),
       child: Column(children: [
-        Container(height:600.h,width:300.w,
+        Container(height:height??600.h,width:300.w,
           child: Lottie.asset(imagePath ),),
         Text(text,
           style: Theme.of(context).textTheme.headlineMedium,

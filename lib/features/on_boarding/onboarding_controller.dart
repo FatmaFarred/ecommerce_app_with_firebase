@@ -1,3 +1,4 @@
+import 'package:ecommerce_app_with_firebase/features/authentication/screens/login/login_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
@@ -15,7 +16,7 @@ void dotNavigationClick (index) {
 }
 void nextPage (){
   if (currentPageIndex.value==2){
-
+    Get.offAllNamed(LoginScreen.loginScreenRoueName);
   }else {
     int page = currentPageIndex.value+1;
     pageController.jumpToPage(page);
