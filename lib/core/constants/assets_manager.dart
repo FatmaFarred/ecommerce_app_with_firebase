@@ -8,6 +8,9 @@ const String lottiePath = "assets/lottie";
 abstract class ImageAssets {
   static const String routeLogo = "$imagePath/splash_logo.png";
   static const String categoryCardImage = "$imagePath/category_card_image.png";
+  static const String shoppinglogo = "$imagePath/entirelogo.png";
+  static const String facelogo = "$imagePath/facebook-logo.webp";
+  static const String googlelogo = "$imagePath/Google__G__logo.webp";
 
   static const String subcategoryCardImage =
       "$imagePath/sub_category_card_image.png";
@@ -27,11 +30,30 @@ abstract class ImageAssets {
   static const String searchIcon = "$imagePath/search.png";
 }
 
-class SvgAssets{
-  static const String routeLogo = "$svgPath/route.svg";
-  static const String eye = "$svgPath/Eye.svg";
-  static const String edit = "$svgPath/edit (1) 5.svg";
+abstract class SvgAssets {
+  static const String icGoogle = "$svgPath/ic_google.svg";
+  static const String icSwitchEnglish = "$svgPath/ic_en.svg";
+  static const String icSwitchArabic = "$svgPath/ic_eg.svg";
+  static const String icArrow = "$svgPath/ic_arrow.svg";
+  static const String icBookmark = "$svgPath/ic_bookmark.svg";
+  static const String icExplore = "$svgPath/ic_explore.svg";
+  static const String icFavorite = "$svgPath/ic_favorite.svg";
+  static const String icFolder = "$svgPath/ic_folder.svg";
+  static const String icHome = "$svgPath/ic_home.svg";
+  static const String icList = "$svgPath/ic_list.svg";
+  static const String icPlay = "$svgPath/ic_play.svg";
+  static const String icProfile = "$svgPath/ic_profile.svg";
+  static const String icRate = "$svgPath/ic_rate.svg";
+  static const String icSearch = "$svgPath/ic_search.svg";
+  static const String icRuntime = "$svgPath/ic_runtime.svg";
+  static const String icEmail = "$svgPath/ic_email.svg";
+  static const String icName = "$svgPath/ic_name.svg";
+  static const String icPassword = "$svgPath/ic_password.svg";
+  static const String icPhone = "$svgPath/ic_phone.svg";
+  static const String icUser = "$svgPath/ic_user.svg";
+  static const String forgotPasswordImage = "$svgPath/forgot_password.svg";
 }
+
 
 abstract class IconsAssets {
   static const String _icCategory = "$iconsPath/ic_category.png";
@@ -66,4 +88,7 @@ class LottieAssets {
   static const String onboarding1 = "$lottiePath/onboraing1.json";
   static const String onboarding2 = "$lottiePath/onboarding2.json";
   static const String onboarding3 = "$lottiePath/onboarding3.json";
+  static const String verfication = "$lottiePath/verfication.json";
+  static const String successful = "$lottiePath/successful.json";
+
 }
