@@ -5,11 +5,11 @@ import 'package:lottie/lottie.dart';
 
 class VerficationWidget extends StatelessWidget {
   VerficationWidget({
-    required this.text, required this.imagePath, required this.subText,this.height, required this.subText2
+    required this.text, required this.imagePath,  this.subText,this.height, required this.subText2
   });
   String imagePath;
   String text;
-  String subText;
+  String ?subText;
   double ?height;
   String subText2;
 
@@ -25,12 +25,12 @@ class VerficationWidget extends StatelessWidget {
         style: Theme.of(context).textTheme.headlineMedium,
         textAlign: TextAlign.center,
       ),
-      SizedBox(height: 20.h,),
-      Text(subText,
+      SizedBox(height: 16.h,),
+      Text(subText??"",
         style: Theme.of(context).textTheme.labelLarge,
         textAlign: TextAlign.center,
       ),
-      SizedBox(height: 20.h,),
+      SizedBox(height:subText==null?20.h:0.h,),
       Text(subText2,
         style: Theme.of(context).textTheme.labelMedium,
         textAlign: TextAlign.center,

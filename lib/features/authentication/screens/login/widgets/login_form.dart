@@ -1,3 +1,4 @@
+import 'package:ecommerce_app_with_firebase/features/authentication/screens/password_configration/forgrt_password_screen.dart';
 import 'package:ecommerce_app_with_firebase/features/authentication/screens/register/register_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_app_with_firebase/core/helpers/helper_functions.dart';
@@ -95,7 +96,7 @@ class _LoginFormState extends State<LoginForm> {
 
   const Text("remember me "),
   Spacer(),
-  MyTextButton(onBottonClick: (){}, buttonWidegt: Text("Forget Password?",)),
+  MyTextButton(onBottonClick: ()=>  Get.toNamed(ForgrtPasswordScreen.forgrtPasswordScreenRoueName), buttonWidegt: Text("Forget Password?",)),
 
   ],),
   SizedBox(height: 16.h,),

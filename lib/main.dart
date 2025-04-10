@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
+import 'features/authentication/screens/password_configration/forgrt_password_screen.dart';
+import 'features/authentication/screens/password_configration/reset_password.dart';
 import 'features/authentication/screens/register/register_screen.dart';
 import 'features/authentication/screens/verify_email/verification_screen.dart';
 
@@ -32,7 +34,10 @@ class MyApp extends StatelessWidget {
       LoginScreen.loginScreenRoueName:(context)=>LoginScreen(),
         RegisterScreen.RegisterScreenRoueName:(context)=>RegisterScreen(),
         VerificationScreen.verificationScreenRoueName:(context)=>VerificationScreen(),
-        SuccessScreen.successScreenRoueName:(context)=>SuccessScreen()
+        SuccessScreen.successScreenRoueName:(context)=>SuccessScreen(),
+        ForgrtPasswordScreen.forgrtPasswordScreenRoueName:(context)=>ForgrtPasswordScreen(),
+        ResetPasswordScreen.resetPasswordScreenRoueName:(context)=>ResetPasswordScreen(),
+
       } ,
 
     )
