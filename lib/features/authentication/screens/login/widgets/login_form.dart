@@ -1,5 +1,6 @@
 import 'package:ecommerce_app_with_firebase/features/authentication/screens/password_configration/forgrt_password_screen.dart';
 import 'package:ecommerce_app_with_firebase/features/authentication/screens/register/register_screen.dart';
+import 'package:ecommerce_app_with_firebase/features/personalization/bottom_navigation/bottom_navigation_bar_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_app_with_firebase/core/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
@@ -100,7 +101,8 @@ class _LoginFormState extends State<LoginForm> {
 
   ],),
   SizedBox(height: 16.h,),
-  CustomizedElevatedButton(color: ColorManager.purple,
+  CustomizedElevatedButton(onPressed: ()=>Get.toNamed(BottomNavigationBarMenu.bottomNavigationRouteName),
+      color: ColorManager.purple,
   borderColor: ColorManager.purple,
   bottonWidget: Text ("Sign in",style: getSemiBoldStyle(color: ColorManager.white),)),
   SizedBox(height: 16.h,),

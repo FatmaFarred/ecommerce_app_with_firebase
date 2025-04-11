@@ -2,6 +2,7 @@ import 'package:ecommerce_app_with_firebase/core/theme/my_app_theme.dart';
 import 'package:ecommerce_app_with_firebase/features/authentication/screens/login/login_screen.dart';
 import 'package:ecommerce_app_with_firebase/features/authentication/screens/success/success_screen.dart';
 import 'package:ecommerce_app_with_firebase/features/on_boarding/onboarding.dart';
+import 'package:ecommerce_app_with_firebase/features/personalization/bottom_navigation/bottom_navigation_bar_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -37,6 +38,7 @@ class MyApp extends StatelessWidget {
         SuccessScreen.successScreenRoueName:(context)=>SuccessScreen(),
         ForgrtPasswordScreen.forgrtPasswordScreenRoueName:(context)=>ForgrtPasswordScreen(),
         ResetPasswordScreen.resetPasswordScreenRoueName:(context)=>ResetPasswordScreen(),
+        BottomNavigationBarMenu.bottomNavigationRouteName:(context)=>BottomNavigationBarMenu()
 
       } ,
 
