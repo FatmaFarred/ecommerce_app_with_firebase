@@ -18,8 +18,12 @@ class CustomTextField extends StatelessWidget {
   TextInputType? keyboardType;
   TextInputAction? textInputAction;
   OnFieldSubmitted? onFieldSubmitted;
+  Color? fillColor;
+  Color? borderColor;
   CustomTextField({
     super.key,
+    this.fillColor,
+    this.borderColor,
     this.suffixIcon,
     this.prefixIcon,
     this.hintText,
@@ -35,6 +39,7 @@ class CustomTextField extends StatelessWidget {
     return TextFormField(
       controller: controller,
       validator: validator,
+
       keyboardType: keyboardType,
       textInputAction: textInputAction,
       style: Theme.of(context).textTheme.bodySmall,
@@ -50,9 +55,9 @@ class CustomTextField extends StatelessWidget {
         hintText: hintText,
         hintStyle: Theme.of(context).textTheme.bodySmall,
         filled: true,
-        fillColor: ColorManager.transparent,
-        enabledBorder: customOutlineInputBorder(),
-        focusedBorder: customOutlineInputBorder(),
+        fillColor: fillColor??ColorManager.transparent,
+        enabledBorder:customOutlineInputBorder( ) ,
+        focusedBorder: customOutlineInputBorder( ),
         errorBorder: customOutlineInputBorder(),
         focusedErrorBorder: customOutlineInputBorder(),
       ),
@@ -64,7 +69,7 @@ class CustomTextField extends StatelessWidget {
     return OutlineInputBorder(
         borderRadius: BorderRadius.circular(16.r),
         borderSide:  BorderSide(
-          color: ColorManager.darkGrey,
+          color:borderColor?? ColorManager.darkGrey,
           width: 2,
         ));
   }

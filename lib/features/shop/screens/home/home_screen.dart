@@ -1,4 +1,5 @@
 import 'package:ecommerce_app_with_firebase/core/constants/color_manager.dart';
+import 'package:ecommerce_app_with_firebase/core/customized_widgets/reusable_widgets/custom_text_field.dart';
 import 'package:ecommerce_app_with_firebase/features/shop/screens/home/widgets/my_home_appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -18,7 +19,20 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             MyPrimaryHeaderContainer(stackChild: Column(children: [
-              MyHomeAppBar()
+              MyHomeAppBar(),
+              SizedBox(height: 32.h,),
+              Padding(
+                padding:  EdgeInsets.symmetric(horizontal: 16.h),
+                child: CustomTextField(prefixIcon: Icon(Iconsax.search_normal),
+                hintText:"Search in store" ,
+                  fillColor: ColorManager.white,
+                  borderColor:ColorManager.white,
+
+
+                ),
+              )
+              
+
 
             ],
 

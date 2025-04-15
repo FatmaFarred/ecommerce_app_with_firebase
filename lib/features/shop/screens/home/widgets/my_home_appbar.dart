@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../../common/widgets/custom_appbar/custom_appbar.dart';
 import '../../../../../common/widgets/product_cart/cart_counter.dart';
+import '../../../../../core/constants/color_manager.dart';
 
 class MyHomeAppBar extends StatelessWidget {
   const MyHomeAppBar({
