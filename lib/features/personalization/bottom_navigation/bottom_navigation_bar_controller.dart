@@ -3,12 +3,14 @@ import 'package:ecommerce_app_with_firebase/features/shop/screens/home/home_scre
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../shop/screens/store/store_screen.dart';
+
 class BottomNavigationBarController extends GetxController{
 
   final Rx <int> selectedIndex=0.obs;
   final screens =[
     HomeScreen(),
-    Container(color: ColorManager.yellow,),
+    StoreScreen(),
     Container(color: ColorManager.darkBlue,),
     Container(color: ColorManager.starRateColor,),
 

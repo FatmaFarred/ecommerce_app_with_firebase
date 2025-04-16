@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../core/constants/color_manager.dart';
+import '../../../core/helpers/helper_functions.dart';
 
 class ImageRoundedContainer extends StatelessWidget {
   const ImageRoundedContainer({
@@ -32,6 +33,8 @@ class ImageRoundedContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark= MyHelperFunction.isDarkMode(context);
+
     return GestureDetector(
       onTap:onPressed ,
       child: Container(padding:padding,
@@ -39,8 +42,10 @@ class ImageRoundedContainer extends StatelessWidget {
         height: height,
 
         decoration: BoxDecoration(borderRadius:BorderRadius.circular(radius??16.r),
+
             border: border,
-            color: backGroundColor??ColorManager.white
+            color: backGroundColor??(dark?ColorManager.black:ColorManager.white),
+
         ),
         child: ClipRRect(
           borderRadius: applyImageRadius?BorderRadius.circular(radius??16.r):BorderRadius.circular(0),

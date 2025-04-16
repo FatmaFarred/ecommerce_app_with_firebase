@@ -1,4 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:ecommerce_app_with_firebase/common/widgets/gridview_layout.dart';
+import 'package:ecommerce_app_with_firebase/common/widgets/product_cart/product_card_vertical.dart';
 import 'package:ecommerce_app_with_firebase/core/constants/assets_manager.dart';
 import 'package:ecommerce_app_with_firebase/core/constants/color_manager.dart';
 import 'package:ecommerce_app_with_firebase/core/customized_widgets/reusable_widgets/custom_text_field.dart';
@@ -43,7 +45,8 @@ class HomeScreen extends StatelessWidget {
              Padding(
                padding:  EdgeInsets.only(left: 16.w),
                child: Column(children: [
-                 MyTitleHeading(title: "Popular categories",titleColor: ColorManager.white,showActionButton: false,),
+                 MyTitleHeading(title: "Popular categories",titleColor: ColorManager.white,showActionButton: false,
+                 ),
                  SizedBox(height: 16.h,),
 
                  ///categorieS
@@ -55,11 +58,20 @@ class HomeScreen extends StatelessWidget {
 
             ],
             )),
-            Column(
-              children: [
-                MyPromoSlider(),
+            Padding(
+              padding:  EdgeInsets.all(16.h),
+              child: Column(
+                children: [
+                  MyPromoSlider(),
+                  SizedBox(height: 32.h,),
+                  MyTitleHeading(title: "Popular categories",onButtonClick: (){},),
+                  SizedBox(height: 16.h,),
 
-              ],
+
+                MyGridViewLayout(itemCount: 4, itembuilder: (_,index)=>const MyProductCardVertical())
+
+                ],
+              ),
             )
           ],
         ),
@@ -67,6 +79,7 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
 
 
 

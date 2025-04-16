@@ -19,9 +19,9 @@ class MyTitleHeading extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(title,style: Theme.of(context).textTheme.headlineSmall?.apply(color: titleColor),
+        Text(title,style: Theme.of(context).textTheme.titleMedium?.apply(color: titleColor),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
         ),

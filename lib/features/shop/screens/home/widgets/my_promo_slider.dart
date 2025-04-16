@@ -26,7 +26,7 @@ class MyPromoSlider extends StatelessWidget {
     return Column(
 
       children: [
-        CarouselSlider(items: adsImages.map((image)=>Obx(()=> ImageRoundedContainer(imageUrl: adsImages[controller.carousalCurrentIndex.value],padding: EdgeInsets.all(16.w),)),).toList(),
+        CarouselSlider(items: adsImages.map((image)=>Obx(()=> ImageRoundedContainer(imageUrl: adsImages[controller.carousalCurrentIndex.value],padding: EdgeInsets.all(8.w),)),).toList(),
             options: CarouselOptions(viewportFraction:1,
               autoPlay: true,
               onPageChanged: (index,_)=>controller.updatePageIndicator(index)
@@ -40,7 +40,7 @@ class MyPromoSlider extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
               children: [
                 for (int i =0 ; i<3 ;i++)  CircularContainer(height: 4.h,width: 20.w,backGroundColor: controller.carousalCurrentIndex==i?ColorManager.purple:ColorManager.grey,
-                  margin: 5.w,)
+                  margin: EdgeInsets.symmetric(horizontal: 5.w,vertical: 5.h),)
 
 
               ],

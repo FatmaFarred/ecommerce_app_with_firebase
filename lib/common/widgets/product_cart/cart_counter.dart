@@ -6,10 +6,12 @@ import '../../../core/constants/color_manager.dart';
 
 class MyCartCounter extends StatelessWidget {
   const MyCartCounter({
-    super.key, this.iconColor, this.OnCartClick,
+    super.key, this.iconColor, this.OnCartClick, this.counterstyle, this.containerColor,
   });
   final Color? iconColor;
   final VoidCallback? OnCartClick;
+  final TextStyle? counterstyle;
+  final Color? containerColor;
 
   @override
   Widget build(BuildContext context) {
@@ -20,9 +22,9 @@ class MyCartCounter extends StatelessWidget {
             child: Container(
               height: 18.h,
               width: 18.w,
-              decoration: BoxDecoration(color:ColorManager.black ,
+              decoration: BoxDecoration(color:containerColor??ColorManager.black ,
                   borderRadius: BorderRadius.circular(18.r)),
-              child: Center(child: Text("2",style: Theme.of(context).textTheme.labelLarge!.apply(color: ColorManager.white,fontSizeFactor: 0.8))),
+              child: Center(child: Text("2",style:counterstyle?? Theme.of(context).textTheme.labelLarge!.apply(color: ColorManager.white,fontSizeFactor: 0.8))),
             ))
       ],
     );
