@@ -45,7 +45,7 @@ class MyProductCardVertical extends StatelessWidget {
                  children: [
                    ImageRoundedContainer(imageUrl: ImageAssets.productImage,applyImageRadius: true,
                      padding:EdgeInsets.zero ,
-                     backGroundColor: ColorManager.black,
+                     //backGroundColor: ColorManager.black,
                    ),
                    Positioned(
                      top: 12.h,
