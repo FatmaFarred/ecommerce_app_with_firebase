@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
 import '../../../../../common/widgets/circular_container.dart';
-import '../../../../../common/widgets/title_heading/image_rounded_container.dart';
+import '../../../../../common/widgets/image_rounded_container.dart';
 import '../../../../../core/constants/assets_manager.dart';
 import '../../../../../core/constants/color_manager.dart';
 

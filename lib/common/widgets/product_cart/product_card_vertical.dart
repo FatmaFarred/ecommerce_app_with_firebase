@@ -1,7 +1,8 @@
 import 'package:ecommerce_app_with_firebase/common/widgets/circular_container.dart';
-import 'package:ecommerce_app_with_firebase/common/widgets/title_heading/image_rounded_container.dart';
+import 'package:ecommerce_app_with_firebase/common/widgets/image_rounded_container.dart';
 import 'package:ecommerce_app_with_firebase/core/constants/assets_manager.dart';
 import 'package:ecommerce_app_with_firebase/core/constants/color_manager.dart';
+import 'package:ecommerce_app_with_firebase/core/constants/enums.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iconsax/iconsax.dart';
@@ -77,9 +78,9 @@ class MyProductCardVertical extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment:CrossAxisAlignment.start ,
                   children: [
-                  MyProductTitle(title: "Red Nike shoes",),
+                  MyProductTitle(title: "Red Nike shoes",productTextSize:TextSizees.medium ,),
                     SizedBox(height: 4.h,),
-                    BrandTitleWithIcon(title: "Nike",maxLines: 1,smallSize:true ,),
+                    BrandTitleWithIcon(title: "Nike",maxLines: 1,productTextSize:TextSizees.medium,),
 
 
 
@@ -91,7 +92,10 @@ class MyProductCardVertical extends StatelessWidget {
               Spacer(),
              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                children: [
-                 MyProductTitle(title: "\$35.5",smallSize: true,maxLines: 1,
+                 MyProductTitle(title: "\$35.5",maxLines: 1,
+
+                   productTextSize: null,
+
                    style: Theme.of(context).textTheme.bodyLarge,
                  ),
                  Container(

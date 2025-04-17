@@ -10,7 +10,7 @@ class MyCircularImageContainer extends StatelessWidget {
     required this.imagePath,
     this.isNetWorkImage=false,
     this.overLayColor, this.backGroundColor,
-    this.width,  this.height,  this.padding,
+    this.width,  this.height,  this.padding, this.margin,
   });
 
   final BoxFit? fit;
@@ -19,6 +19,7 @@ class MyCircularImageContainer extends StatelessWidget {
   final Color? overLayColor;
   final Color? backGroundColor;
   final double ?width,height,padding;
+  final EdgeInsetsGeometry? margin;
 
 
   @override
@@ -28,6 +29,7 @@ class MyCircularImageContainer extends StatelessWidget {
     return Container(
       height: height??56.h,
       width: width??56.w,
+      margin:margin ,
       padding:EdgeInsets.all(padding??8.w) ,
       decoration: BoxDecoration(
         color:backGroundColor?? (dark?ColorManager.black:ColorManager.white) ,

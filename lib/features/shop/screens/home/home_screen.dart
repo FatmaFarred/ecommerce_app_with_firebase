@@ -17,7 +17,7 @@ import '../../../../common/widgets/circular_container.dart';
 import '../../../../common/widgets/custom_appbar/custom_appbar.dart';
 import '../../../../common/widgets/primary_header_container.dart';
 import '../../../../common/widgets/product_cart/cart_counter.dart';
-import '../../../../common/widgets/title_heading/image_rounded_container.dart';
+import '../../../../common/widgets/image_rounded_container.dart';
 import '../../../../common/widgets/title_heading/title_heading.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -45,7 +45,7 @@ class HomeScreen extends StatelessWidget {
              Padding(
                padding:  EdgeInsets.only(left: 16.w),
                child: Column(children: [
-                 MyTitleHeading(title: "Popular categories",titleColor: ColorManager.white,showActionButton: false,
+                 MyTitleHeading(title: "Popular categories",TextColor: ColorManager.white,showActionButton: false,
                  ),
                  SizedBox(height: 16.h,),
 

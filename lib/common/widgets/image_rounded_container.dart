@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../core/constants/color_manager.dart';
-import '../../../core/helpers/helper_functions.dart';
+import '../../core/constants/color_manager.dart';
+import '../../core/helpers/helper_functions.dart';
 
 class ImageRoundedContainer extends StatelessWidget {
   const ImageRoundedContainer({
@@ -15,7 +15,7 @@ class ImageRoundedContainer extends StatelessWidget {
     this.padding,
     this.isNetworkImage=false,
     this.onPressed,
-    this.radius,
+    this.radius, this.margin,
   });
   final double? width,height;
   final String imageUrl;
@@ -23,7 +23,7 @@ class ImageRoundedContainer extends StatelessWidget {
   final BoxBorder? border;
   final Color? backGroundColor;
   final BoxFit? fit;
-  final EdgeInsetsGeometry? padding;
+  final EdgeInsetsGeometry? padding,margin;
   final bool isNetworkImage;
   final VoidCallback? onPressed;
   final double ?radius;
@@ -40,7 +40,7 @@ class ImageRoundedContainer extends StatelessWidget {
       child: Container(padding:padding,
         width: width,
         height: height,
-
+         margin: margin,
         decoration: BoxDecoration(borderRadius:BorderRadius.circular(radius??16.r),
 
             border: border,
