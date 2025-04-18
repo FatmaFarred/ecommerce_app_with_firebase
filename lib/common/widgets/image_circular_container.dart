@@ -34,6 +34,7 @@ class MyCircularImageContainer extends StatelessWidget {
       decoration: BoxDecoration(
         color:backGroundColor?? (dark?ColorManager.black:ColorManager.white) ,
 
+
       ),
       child: Center(child:Image(fit:fit,
 

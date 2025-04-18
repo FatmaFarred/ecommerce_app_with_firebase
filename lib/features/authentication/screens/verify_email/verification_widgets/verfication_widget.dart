@@ -4,7 +4,7 @@ import 'package:lottie/lottie.dart';
 
 
 class VerficationWidget extends StatelessWidget {
-  VerficationWidget({
+  VerficationWidget({super.key, 
     required this.text, required this.imagePath,  this.subText,this.height, required this.subText2
   });
   String imagePath;
@@ -18,7 +18,7 @@ class VerficationWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(children: [
-      Container(height:height??600.h,width:300.w,
+      SizedBox(height:height??600.h,width:300.w,
         child: Lottie.asset(imagePath ),),
       SizedBox(height: 32.h,),
       Text(text,

@@ -1,4 +1,3 @@
-import 'package:ecommerce_app_with_firebase/common/widgets/product_cart/product_card_vertical.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

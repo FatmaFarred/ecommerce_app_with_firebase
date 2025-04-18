@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../constants/color_manager.dart';
-import '../../constants/font_manager/font_style_manager.dart';
 
 
 class CustomizedElevatedButton extends StatelessWidget {

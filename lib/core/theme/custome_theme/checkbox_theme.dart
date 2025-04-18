@@ -6,8 +6,8 @@ class MyCheckBoxTheme {
   MyCheckBoxTheme._();
   static CheckboxThemeData lightCheckBox = CheckboxThemeData (
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4) ),
-    checkColor: MaterialStateProperty.resolveWith((states){
-      if(states.contains(MaterialState.selected)){
+    checkColor: WidgetStateProperty.resolveWith((states){
+      if(states.contains(WidgetState.selected)){
         return ColorManager.white;
 
       }else {
@@ -16,8 +16,8 @@ class MyCheckBoxTheme {
 
     }
 ),
-    fillColor: MaterialStateProperty. resolveWith((states){
-      if(states.contains(MaterialState.selected)){
+    fillColor: WidgetStateProperty. resolveWith((states){
+      if(states.contains(WidgetState.selected)){
         return ColorManager.purple;
 
       }else {

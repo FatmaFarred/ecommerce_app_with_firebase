@@ -1,6 +1,4 @@
-import 'package:ecommerce_app_with_firebase/common/styles/spacing_styles.dart';
 import 'package:ecommerce_app_with_firebase/core/helpers/helper_functions.dart';
-import 'package:ecommerce_app_with_firebase/features/authentication/screens/login/widgets/login_form.dart';
 import 'package:ecommerce_app_with_firebase/features/authentication/screens/password_configration/reset_password.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

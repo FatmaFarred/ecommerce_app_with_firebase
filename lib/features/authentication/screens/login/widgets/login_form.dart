@@ -3,23 +3,21 @@ import 'package:ecommerce_app_with_firebase/features/authentication/screens/regi
 import 'package:ecommerce_app_with_firebase/features/personalization/bottom_navigation/bottom_navigation_bar_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerce_app_with_firebase/core/helpers/helper_functions.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:iconsax/iconsax.dart';
 
-import '../../../../../core/constants/assets_manager.dart';
 import '../../../../../core/constants/color_manager.dart';
 import '../../../../../core/constants/font_manager/font_style_manager.dart';
 import '../../../../../core/customized_widgets/reusable_widgets/custom_text_field.dart';
 import '../../../../../core/customized_widgets/reusable_widgets/customized_elevated_button.dart';
 import '../../../../../core/customized_widgets/reusable_widgets/text_botton.dart';
 import '../../../../../core/validators/my_validator.dart';
-import 'circular_container.dart';
 
 class LoginForm extends StatefulWidget {
+  const LoginForm({super.key});
+
 
   @override
   State<LoginForm> createState() => _LoginFormState();

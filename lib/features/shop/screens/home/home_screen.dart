@@ -1,7 +1,5 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:ecommerce_app_with_firebase/common/widgets/gridview_layout.dart';
 import 'package:ecommerce_app_with_firebase/common/widgets/product_cart/product_card_vertical.dart';
-import 'package:ecommerce_app_with_firebase/core/constants/assets_manager.dart';
 import 'package:ecommerce_app_with_firebase/core/constants/color_manager.dart';
 import 'package:ecommerce_app_with_firebase/core/customized_widgets/reusable_widgets/custom_text_field.dart';
 import 'package:ecommerce_app_with_firebase/core/helpers/helper_functions.dart';
@@ -12,16 +10,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iconsax/iconsax.dart';
 
-import '../../../../common/widgets/category_widget.dart';
-import '../../../../common/widgets/circular_container.dart';
-import '../../../../common/widgets/custom_appbar/custom_appbar.dart';
 import '../../../../common/widgets/primary_header_container.dart';
-import '../../../../common/widgets/product_cart/cart_counter.dart';
-import '../../../../common/widgets/image_rounded_container.dart';
 import '../../../../common/widgets/title_heading/title_heading.dart';
 
 class HomeScreen extends StatelessWidget {
-  HomeScreen({super.key});
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

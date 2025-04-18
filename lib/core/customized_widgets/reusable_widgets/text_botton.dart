@@ -5,7 +5,7 @@ class MyTextButton extends StatelessWidget {
   Function onBottonClick;
   Widget buttonWidegt;
 
-   MyTextButton({
+   MyTextButton({super.key, 
     required this.onBottonClick,required this.buttonWidegt
   });
 

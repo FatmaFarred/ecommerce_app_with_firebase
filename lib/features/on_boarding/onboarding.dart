@@ -7,10 +7,6 @@ import 'package:ecommerce_app_with_firebase/features/on_boarding/onboarding_cont
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:iconsax/iconsax.dart';
-import 'package:lottie/lottie.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import 'smooth_page_indicator.dart';
 import '../../core/customized_widgets/reusable_widgets/text_botton.dart';

@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../common/widgets/circular_container.dart';
 import '../../../../../common/widgets/image_rounded_container.dart';
-import '../../../../../core/constants/assets_manager.dart';
 import '../../../../../core/constants/color_manager.dart';
 import 'brand_container.dart';
 

@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../core/constants/color_manager.dart';
 
 class CircularContainer extends StatelessWidget {
-   CircularContainer({
+   CircularContainer({super.key, 
      required this.imagePath
   });
   String imagePath;

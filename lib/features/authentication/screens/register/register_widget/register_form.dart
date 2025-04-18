@@ -1,22 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:ecommerce_app_with_firebase/core/helpers/helper_functions.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:get/get.dart';
 
 
-import '../../../../../core/constants/assets_manager.dart';
 import '../../../../../core/constants/color_manager.dart';
 import '../../../../../core/constants/font_manager/font_style_manager.dart';
 import '../../../../../core/customized_widgets/reusable_widgets/custom_text_field.dart';
 import '../../../../../core/customized_widgets/reusable_widgets/customized_elevated_button.dart';
-import '../../../../../core/customized_widgets/reusable_widgets/text_botton.dart';
 import '../../../../../core/validators/my_validator.dart';
 import '../../verify_email/verification_screen.dart';
 
 class RegisterForm extends StatefulWidget {
+  const RegisterForm({super.key});
+
 
   @override
   State<RegisterForm> createState() => _LoginFormState();

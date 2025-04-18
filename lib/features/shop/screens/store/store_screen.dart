@@ -1,24 +1,16 @@
-import 'package:ecommerce_app_with_firebase/common/widgets/circular_container.dart';
 import 'package:ecommerce_app_with_firebase/common/widgets/custom_appbar/custom_appbar.dart';
 import 'package:ecommerce_app_with_firebase/common/widgets/custom_appbar/custom_tab_bar.dart';
 import 'package:ecommerce_app_with_firebase/common/widgets/gridview_layout.dart';
-import 'package:ecommerce_app_with_firebase/common/widgets/image_rounded_container.dart';
-import 'package:ecommerce_app_with_firebase/common/widgets/product_cart/brand_title_with_icon.dart';
 import 'package:ecommerce_app_with_firebase/common/widgets/product_cart/cart_counter.dart';
-import 'package:ecommerce_app_with_firebase/common/widgets/text/product_title.dart';
 import 'package:ecommerce_app_with_firebase/common/widgets/title_heading/title_heading.dart';
-import 'package:ecommerce_app_with_firebase/core/constants/assets_manager.dart';
 import 'package:ecommerce_app_with_firebase/core/constants/color_manager.dart';
-import 'package:ecommerce_app_with_firebase/core/constants/enums.dart';
 import 'package:ecommerce_app_with_firebase/core/helpers/helper_functions.dart';
 import 'package:ecommerce_app_with_firebase/features/shop/screens/store/widgets/brand_container.dart';
-import 'package:ecommerce_app_with_firebase/features/shop/screens/store/widgets/brand_show_case.dart';
 import 'package:ecommerce_app_with_firebase/features/shop/screens/store/widgets/my_category_tab.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:iconsax/iconsax.dart';
 
-import '../../../../common/widgets/image_circular_container.dart';
 import '../../../../core/customized_widgets/reusable_widgets/custom_text_field.dart';
 
 class StoreScreen extends StatelessWidget {

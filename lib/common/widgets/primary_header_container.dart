@@ -14,25 +14,22 @@ class MyPrimaryHeaderContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return CurvedEdgeWidegt(child:Container(
       color: ColorManager.purple,
-      padding: EdgeInsets.all(0),
-      child: SizedBox(
-        height: 400.h, // You can adjust this height as needed
-        child: Stack(
-          children: [
-            Positioned(
-              child: CircularContainer(),
-              top: -150.h,
-              right: -250.w,
-            ),
-            Positioned(
-              child: CircularContainer(),
-              top: 100.h,
-              right: -300.w,
-            ),
-            stackChild,
+      padding: EdgeInsets.only(bottom:32.h),
+      child: Stack(
+        children: [
+          Positioned(
+            top: -150.h,
+            right: -250.w,
+            child: CircularContainer(),
+          ),
+          Positioned(
+            top: 100.h,
+            right: -300.w,
+            child: CircularContainer(),
+          ),
+          stackChild,
 
-          ],
-        ),
+        ],
       ),
     ) ,);
   }
