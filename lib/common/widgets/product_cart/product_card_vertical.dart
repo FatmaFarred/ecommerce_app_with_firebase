@@ -3,8 +3,11 @@ import 'package:ecommerce_app_with_firebase/common/widgets/image_rounded_contain
 import 'package:ecommerce_app_with_firebase/core/constants/assets_manager.dart';
 import 'package:ecommerce_app_with_firebase/core/constants/color_manager.dart';
 import 'package:ecommerce_app_with_firebase/core/constants/enums.dart';
+import 'package:ecommerce_app_with_firebase/features/shop/screens/product_details/product_details_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../core/helpers/helper_functions.dart';
@@ -20,7 +23,7 @@ class MyProductCardVertical extends StatelessWidget {
     final dark= MyHelperFunction.isDarkMode(context);
 
     return  GestureDetector(
-      onTap: (){},
+      onTap: ()=>Get.toNamed(ProductDetailsScreen.routeName),
       child: Container(
         width: 180.w,
 

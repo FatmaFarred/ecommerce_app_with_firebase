@@ -12,6 +12,7 @@ import 'features/authentication/screens/password_configration/forgrt_password_sc
 import 'features/authentication/screens/password_configration/reset_password.dart';
 import 'features/authentication/screens/register/register_screen.dart';
 import 'features/authentication/screens/verify_email/verification_screen.dart';
+import 'features/shop/screens/product_details/product_details_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -40,7 +41,9 @@ class MyApp extends StatelessWidget {
         ForgrtPasswordScreen.forgrtPasswordScreenRoueName:(context)=>ForgrtPasswordScreen(),
         ResetPasswordScreen.resetPasswordScreenRoueName:(context)=>ResetPasswordScreen(),
         BottomNavigationBarMenu.bottomNavigationRouteName:(context)=>BottomNavigationBarMenu(),
-        ProfileScreen.profileScreenRouteName:(context)=>ProfileScreen()
+        ProfileScreen.profileScreenRouteName:(context)=>ProfileScreen(),
+        ProductDetailsScreen.routeName:(context)=>ProductDetailsScreen(),
+
 
       } ,
 

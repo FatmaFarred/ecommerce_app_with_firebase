@@ -21,6 +21,8 @@ abstract class ImageAssets {
   static const String carouselSlider3 = "$imagePath/CarouselSlider3.png";
   static const String brandHomeImage = "$imagePath/brands_section_image.png";
   static const String productImage = "$imagePath/product_image.png";
+  static const String productImage2 = "$imagePath/product_image2.png";
+
 
   static const String rate = "$imagePath/rate.png";
 
