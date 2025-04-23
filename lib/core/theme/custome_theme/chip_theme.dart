@@ -7,7 +7,7 @@ class MyChipTheme {
   
   static ChipThemeData lightChipTheme =ChipThemeData (
     disabledColor: ColorManager.darkGrey.withOpacity(0.4),
-    selectedColor: ColorManager.darkBlue,
+    selectedColor: ColorManager.purple,
     checkmarkColor: ColorManager.white,
     labelStyle: getRegularStyle(color: ColorManager.black),
     padding: EdgeInsets.symmetric(vertical: 12,horizontal:12 )
@@ -15,8 +15,8 @@ class MyChipTheme {
 
 
   static ChipThemeData darkChipTheme =ChipThemeData (
-      disabledColor: ColorManager.darkGrey.withOpacity(0.4),
-      selectedColor: ColorManager.darkBlue,
+      disabledColor: ColorManager.darkGrey,
+      selectedColor: ColorManager.purple,
       checkmarkColor: ColorManager.white,
       labelStyle: getRegularStyle(color: ColorManager.white),
       padding: EdgeInsets.symmetric(vertical: 12,horizontal:12 )
