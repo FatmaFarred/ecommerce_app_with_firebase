@@ -13,6 +13,7 @@ import 'features/authentication/screens/password_configration/reset_password.dar
 import 'features/authentication/screens/register/register_screen.dart';
 import 'features/authentication/screens/verify_email/verification_screen.dart';
 import 'features/shop/screens/product_details/product_details_screen.dart';
+import 'features/shop/screens/product_reviews/product_reviews.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,7 +44,7 @@ class MyApp extends StatelessWidget {
         BottomNavigationBarMenu.bottomNavigationRouteName:(context)=>BottomNavigationBarMenu(),
         ProfileScreen.profileScreenRouteName:(context)=>ProfileScreen(),
         ProductDetailsScreen.routeName:(context)=>ProductDetailsScreen(),
-
+        ProductReviewScreen.routeName:(context)=>ProductReviewScreen(),
 
       } ,
 

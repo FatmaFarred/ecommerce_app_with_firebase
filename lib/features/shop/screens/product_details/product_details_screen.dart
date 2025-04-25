@@ -13,10 +13,13 @@ import 'package:ecommerce_app_with_firebase/features/shop/screens/product_detail
 import 'package:ecommerce_app_with_firebase/features/shop/screens/product_details/widgets/rate_and_share_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/route_manager.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 
 import '../../../../core/constants/enums.dart';
+import '../product_reviews/product_reviews.dart';
 
 class ProductDetailsScreen extends StatelessWidget {
   const ProductDetailsScreen({super.key});
@@ -71,7 +74,7 @@ class ProductDetailsScreen extends StatelessWidget {
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                 MyTitleHeading(title: "Reviews(199)",productTextSize:TextSizees.large,showActionButton: false,),
-                IconButton(onPressed: (){}, icon: Icon(Iconsax.arrow_right_34))
+                IconButton(onPressed: ()=>Get.toNamed(ProductReviewScreen.routeName), icon: Icon(Iconsax.arrow_right_34))
 
               ],)
 

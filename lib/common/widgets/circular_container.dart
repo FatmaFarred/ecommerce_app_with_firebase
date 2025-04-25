@@ -31,8 +31,8 @@ class CircularContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: width??400.w,
-      height: height??400.h,
+      width: width,
+      height: height,
       margin: margin,
       padding: padding,
       decoration: BoxDecoration(
