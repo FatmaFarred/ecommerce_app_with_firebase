@@ -14,8 +14,11 @@ import 'package:get/get.dart';
 
 
 class SuccessScreen extends StatelessWidget {
-  const SuccessScreen({super.key});
+  const SuccessScreen({super.key, required this.title, required this.subTitle, required this.imagePath, this.onPressed});
   static String successScreenRoueName="SuccessScreen";
+  final String title,subTitle,imagePath;
+  final VoidCallback? onPressed;
+
 
 
   @override
@@ -29,16 +32,16 @@ class SuccessScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              VerficationWidget(text: "Your account successfully created!",
-                imagePath: LottieAssets.successful, subText: "",height: 300.h,
-                subText2:"Welcome to Your ultimate shopping destination , Your account is created unleash the joy of seamless online shopping",
+              VerficationWidget(text: title,
+                imagePath: imagePath, subText: "",height: 300.h,
+                subText2:subTitle,
               ),
               SizedBox(height: 32.h,),
               CustomizedElevatedButton(
                   color: ColorManager.purple,
                   borderColor: ColorManager.purple,
 
-                  onPressed: ()=>Get.toNamed(LoginScreen.loginScreenRoueName),
+                  onPressed: onPressed,
                   bottonWidget: Text ("Continue",
                       style: getSemiBoldStyle(color: ColorManager.white,fontSize: 14))
               ),

@@ -1,5 +1,8 @@
+import 'package:ecommerce_app_with_firebase/features/shop/screens/cart/cart_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/route_manager.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../core/constants/color_manager.dart';
@@ -17,7 +20,7 @@ class MyCartCounter extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        IconButton(onPressed: OnCartClick, icon:Icon(Iconsax.shopping_bag,color:iconColor??ColorManager.white ,)),
+        IconButton(onPressed: ()=>Get.toNamed(CartScreen.routeName), icon:Icon(Iconsax.shopping_bag,color:iconColor??ColorManager.white ,)),
         Positioned(right: 0,
             child: Container(
               height: 18.h,

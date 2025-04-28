@@ -3,11 +3,14 @@ import 'package:ecommerce_app_with_firebase/common/widgets/product_cart/product_
 import 'package:ecommerce_app_with_firebase/core/constants/color_manager.dart';
 import 'package:ecommerce_app_with_firebase/core/customized_widgets/reusable_widgets/custom_text_field.dart';
 import 'package:ecommerce_app_with_firebase/core/helpers/helper_functions.dart';
+import 'package:ecommerce_app_with_firebase/features/shop/screens/all_products/all_products_screen.dart';
 import 'package:ecommerce_app_with_firebase/features/shop/screens/home/widgets/home_category.dart' show HomeCategory;
 import 'package:ecommerce_app_with_firebase/features/shop/screens/home/widgets/my_home_appbar.dart';
 import 'package:ecommerce_app_with_firebase/features/shop/screens/home/widgets/my_promo_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../common/widgets/primary_header_container.dart';
@@ -45,7 +48,6 @@ class HomeScreen extends StatelessWidget {
                  ///categorieS
                  HomeCategory(),
 
-
                ],),
              )
 
@@ -57,7 +59,7 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   MyPromoSlider(),
                   SizedBox(height: 32.h,),
-                  MyTitleHeading(title: "Popular categories",onButtonClick: (){},),
+                  MyTitleHeading(title: "Popular categories",onButtonClick: ()=>Get.toNamed(AllProductsScreen.routeName),),
                   SizedBox(height: 16.h,),
 
 

@@ -12,19 +12,18 @@ import '../../../../../core/constants/enums.dart';
 class MyBrandContainer extends StatelessWidget {
   const MyBrandContainer({
     super.key,
-    required this.dark, this.borderColor,
+    required this.dark, this.borderColor,  this.onPressed,
   });
 
   final bool dark;
   final Color? borderColor;
+  final VoidCallback ?onPressed;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){},
+      onTap: onPressed,
       child: CircularContainer(
-        height: 70.h,
-        width: double.infinity,
         radius: 16.r,
         padding: EdgeInsets.all(8.w),
         border: Border.all(color:borderColor??(dark?ColorManager.grey:ColorManager.grey2) ),

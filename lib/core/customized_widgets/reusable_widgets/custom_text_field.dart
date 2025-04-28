@@ -20,6 +20,8 @@ class CustomTextField extends StatelessWidget {
   OnFieldSubmitted? onFieldSubmitted;
   Color? fillColor;
   Color? borderColor;
+  bool showBorder;
+  TextStyle? textstyle;
   CustomTextField({
     super.key,
     this.fillColor,
@@ -33,6 +35,8 @@ class CustomTextField extends StatelessWidget {
     this.obscureText = false,
     this.validator,
     this.onFieldSubmitted,
+    this.showBorder=true,
+    this.textstyle,
   });
   @override
   Widget build(BuildContext context) {
@@ -42,7 +46,7 @@ class CustomTextField extends StatelessWidget {
 
       keyboardType: keyboardType,
       textInputAction: textInputAction,
-      style: Theme.of(context).textTheme.bodySmall,
+      style: textstyle??Theme.of(context).textTheme.bodySmall,
       obscureText: obscureText,
       obscuringCharacter: '*',
       cursorColor: Theme.of(context).indicatorColor,
@@ -53,7 +57,7 @@ class CustomTextField extends StatelessWidget {
         prefixIcon: prefixIcon,
         prefixIconColor: Theme.of(context).indicatorColor,
         hintText: hintText,
-        hintStyle: Theme.of(context).textTheme.bodySmall,
+        hintStyle: textstyle??Theme.of(context).textTheme.bodySmall,
         filled: true,
         fillColor: fillColor??ColorManager.transparent,
         enabledBorder:customOutlineInputBorder( ) ,
@@ -66,11 +70,11 @@ class CustomTextField extends StatelessWidget {
   }
 
   InputBorder customOutlineInputBorder() {
-    return OutlineInputBorder(
+    return showBorder?OutlineInputBorder(
         borderRadius: BorderRadius.circular(16.r),
         borderSide:  BorderSide(
           color:borderColor?? ColorManager.darkGrey,
           width: 2,
-        ));
+        )):InputBorder.none;
   }
 }

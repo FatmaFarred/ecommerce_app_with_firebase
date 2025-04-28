@@ -17,7 +17,8 @@ class VerficationWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: [
+    return Column(crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
       SizedBox(height:height??600.h,width:300.w,
         child: Lottie.asset(imagePath ),),
       SizedBox(height: 32.h,),

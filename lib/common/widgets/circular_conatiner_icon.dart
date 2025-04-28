@@ -24,7 +24,8 @@ class CircularConatinerIcon extends StatelessWidget {
 
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(100.r),
           color:backGroundColor ),
-      child: Center(child: IconButton(onPressed: onPressed, icon: Icon(icon,color:color ,size:size ,))),
+      child: Center(child: IconButton(padding: EdgeInsets.zero,
+          onPressed: onPressed, icon: Icon(icon,color:color ,size:size ,))),
 
 
 

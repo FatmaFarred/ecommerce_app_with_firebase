@@ -7,8 +7,10 @@ import 'package:ecommerce_app_with_firebase/core/constants/assets_manager.dart';
 import 'package:ecommerce_app_with_firebase/core/constants/color_manager.dart';
 import 'package:ecommerce_app_with_firebase/core/constants/enums.dart';
 import 'package:ecommerce_app_with_firebase/core/customized_widgets/reusable_widgets/customized_elevated_button.dart';
+import 'package:ecommerce_app_with_firebase/features/personalization/screens/address/address_screen.dart';
 import 'package:ecommerce_app_with_firebase/features/personalization/screens/profile/profile_screen.dart';
 import 'package:ecommerce_app_with_firebase/features/personalization/screens/settings/widgets/user_profile_title.dart';
+import 'package:ecommerce_app_with_firebase/features/shop/screens/cart/cart_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_core/src/get_main.dart';
@@ -16,6 +18,7 @@ import 'package:get/route_manager.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../common/widgets/image_rounded_container.dart';
+import '../../../shop/screens/orders/orders_screen.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -41,9 +44,9 @@ class SettingsScreen extends StatelessWidget {
           child: Column(children: [
             MyTitleHeading(title: "Account Settings",showActionButton: false,productTextSize: TextSizees.large,),
             SizedBox(height: 18.h,),
-            MySettinglistilewidget(title: "My Addresses", subtitle: "Set shopping delivery address", icon: Iconsax.safe_home, ),
-            MySettinglistilewidget(title: "My Cart", subtitle: "Add, remove products and move to check out ", icon: Iconsax.shopping_cart, ),
-            MySettinglistilewidget(title: "My Orders", subtitle: "In-progress and completed orders ", icon: Iconsax.bag_tick, ),
+            MySettinglistilewidget(title: "My Addresses", subtitle: "Set shopping delivery address", icon: Iconsax.safe_home, OnPressed: ()=>Get.toNamed(AddressScreen.routeName),),
+            MySettinglistilewidget(title: "My Cart", subtitle: "Add, remove products and move to check out ", icon: Iconsax.shopping_cart,OnPressed: ()=>Get.toNamed(CartScreen.routeName), ),
+            MySettinglistilewidget(title: "My Orders", subtitle: "In-progress and completed orders ", icon: Iconsax.bag_tick,OnPressed: ()=>Get.toNamed(OrdersScreen.routeName), ),
             MySettinglistilewidget(title: "Bank Account", subtitle: "Withdraw balance to registered bank account ", icon: Iconsax.bank, ),
             MySettinglistilewidget(title: "My Coupons", subtitle: "List of all the discounts coupons", icon: Iconsax.discount_shape, ),
             MySettinglistilewidget(title: "Notifications", subtitle: "Set any kind of notification message ", icon: Iconsax.notification, ),

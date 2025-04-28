@@ -11,6 +11,9 @@ abstract class ImageAssets {
   static const String shoppinglogo = "$imagePath/entirelogo.png";
   static const String facelogo = "$imagePath/facebook-logo.webp";
   static const String googlelogo = "$imagePath/Google__G__logo.webp";
+  static const String paypallogo = "$imagePath/250_Paypal_logo-512.webp";
+  static const String visalogo = "$imagePath/mastercard-visa-cards.webp";
+
 
   static const String subcategoryCardImage =
       "$imagePath/sub_category_card_image.png";

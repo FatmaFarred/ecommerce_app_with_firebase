@@ -5,10 +5,13 @@ import 'package:ecommerce_app_with_firebase/common/widgets/product_cart/cart_cou
 import 'package:ecommerce_app_with_firebase/common/widgets/title_heading/title_heading.dart';
 import 'package:ecommerce_app_with_firebase/core/constants/color_manager.dart';
 import 'package:ecommerce_app_with_firebase/core/helpers/helper_functions.dart';
+import 'package:ecommerce_app_with_firebase/features/shop/screens/all%20brands/all_brands_screen.dart';
 import 'package:ecommerce_app_with_firebase/features/shop/screens/store/widgets/brand_container.dart';
 import 'package:ecommerce_app_with_firebase/features/shop/screens/store/widgets/my_category_tab.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../core/customized_widgets/reusable_widgets/custom_text_field.dart';
@@ -50,7 +53,7 @@ class StoreScreen extends StatelessWidget {
                    SizedBox(height: 32.h,),
 
                    ///featured brands
-                   MyTitleHeading(title: "Featured brands",onButtonClick: (){},),
+                   MyTitleHeading(title: "Featured brands",onButtonClick: ()=>Get.toNamed(AllBrandsScreen.routeName),),
                    SizedBox(height: 12.h,),
                    MyGridViewLayout(itemCount: 4,mainAxisExtent: 80.h, itembuilder: (_,index){
                      return MyBrandContainer(dark: dark);
@@ -75,8 +78,15 @@ class StoreScreen extends StatelessWidget {
           )];
         }
             , body: TabBarView(children: [
-              MyCategoryTab(dark: dark)
-              
+              MyCategoryTab(dark: dark),
+              MyCategoryTab(dark: dark),
+              MyCategoryTab(dark: dark),
+              MyCategoryTab(dark: dark),
+              MyCategoryTab(dark: dark),
+
+
+
+
             ])),
       ),
     );

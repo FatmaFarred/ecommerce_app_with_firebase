@@ -44,7 +44,10 @@ class VerificationScreen extends StatelessWidget {
                   color: ColorManager.purple,
                   borderColor: ColorManager.purple,
 
-                  onPressed: ()=>Get.toNamed(SuccessScreen.successScreenRoueName),                  bottonWidget: Text ("Continue",
+                  onPressed: ()=>Get.to(SuccessScreen(title: "Your account successfully created!",
+                      subTitle: "Welcome to Your ultimate shopping destination , Your account is created unleash the joy of seamless online shopping",
+                      imagePath:LottieAssets.successful,onPressed:()=>Get.offAllNamed(LoginScreen.loginScreenRoueName))),
+                  bottonWidget: Text ("Continue",
                     style: getSemiBoldStyle(color: ColorManager.white,fontSize: 14))
               ),
               SizedBox(height: 16.h,),
